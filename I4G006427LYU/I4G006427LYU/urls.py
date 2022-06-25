@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("blog/", include("blog.urls", namespace="blog"))
+    path("", include("blog.urls", namespace="blog"))
 ]
+# took out blog/ from line 21 to create an empty path to make it work when i run server
